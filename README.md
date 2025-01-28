@@ -8,6 +8,22 @@
 
 This repository proposes an architecture for generating personalized context data for AI systems.  Instead of relying on passive data collection, this system advocates for a proactive, interview-driven approach.  An "Interviewer" AI agent gathers detailed information from the user, which is then stored in a personal context data store.  This data fuels a personalized AI agent, providing increasingly accurate and relevant assistance. This user-centric approach prioritizes data privacy and empowers individuals to shape their AI experience.
 
+```mermaid
+graph LR
+    subgraph Context Generation
+        A[User] --> B{Interviewer AI}
+        B --> C[Context Snippets]
+    end
+    C --> D[Context Data Store (Vector Database)]
+    D --> E[Personal AI Agent]
+    subgraph Optional Components
+        F[Data Classification Agent] --> G[Other Services]
+        D --> F
+    end
+    E --> H[User Receives Personalized Assistance]
+    H --> A
+```
+
 ## Details
 
 This GitHub repository documents an idea I've been developing regarding context storage and the rapid advancements in AI assistants and agents.  It combines several system components I've been working on to outline a unified system for achieving personalized AI interactions.
