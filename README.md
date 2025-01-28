@@ -90,7 +90,7 @@ This architecture prioritizes personal data sovereignty.  Users proactively gene
 
 ## How Multiple Contextual Data Sources Could Coexist In Integrated RAG Pipelines
 
-![alt text](diagrams/3.png)
+![alt text](diagrams/4.png)
 
 ## Potential Use Cases
 
