@@ -8,21 +8,9 @@
 
 This repository proposes an architecture for generating personalized context data for AI systems.  Instead of relying on passive data collection, this system advocates for a proactive, interview-driven approach.  An "Interviewer" AI agent gathers detailed information from the user, which is then stored in a personal context data store.  This data fuels a personalized AI agent, providing increasingly accurate and relevant assistance. This user-centric approach prioritizes data privacy and empowers individuals to shape their AI experience.
 
-```mermaid
-graph LR
-    subgraph ContextGeneration
-        A[User] --> B{InterviewerAI}
-        B --> C[ContextSnippets]
-    end
-    C --> D[ContextDataStore(VectorDatabase)]
-    D --> E[PersonalAIAgent]
-    subgraph OptionalComponents
-        F[DataClassificationAgent] --> G[OtherServices]
-        D --> F
-    end
-    E --> H[UserReceivesPersonalizedAssistance]
-    H --> A
-```    
+## Diagram
+
+![alt text](diagrams/chatuml-diagram.png)
 
 ## Details
 
