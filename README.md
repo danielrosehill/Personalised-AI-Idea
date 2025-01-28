@@ -10,19 +10,19 @@ This repository proposes an architecture for generating personalized context dat
 
 ```mermaid
 graph LR
-    subgraph Context Generation
-        A[User] --> B{Interviewer AI}
-        B --> C[Context Snippets]
+    subgraph ContextGeneration
+        A[User] --> B{InterviewerAI}
+        B --> C[ContextSnippets]
     end
-    C --> D[Context Data Store (Vector Database)]
-    D --> E[Personal AI Agent]
-    subgraph Optional Components
-        F[Data Classification Agent] --> G[Other Services]
+    C --> D[ContextDataStore(VectorDatabase)]
+    D --> E[PersonalAIAgent]
+    subgraph OptionalComponents
+        F[DataClassificationAgent] --> G[OtherServices]
         D --> F
     end
-    E --> H[User Receives Personalized Assistance]
+    E --> H[UserReceivesPersonalizedAssistance]
     H --> A
-```
+```    
 
 ## Details
 
