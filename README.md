@@ -36,6 +36,8 @@ One drawback is that while effective, these systems are long-term gambits.  A mo
 
 The system I propose takes an active approach to context data creation.  Instead of grafting existing data stores onto AI tools, we should deliberately invest in generating context data.  This involves a specific workflow combining existing tools:
 
+![alt text](diagrams/1.png)
+
 ## 1: The "Interviewer"
 
 The first component is an AI assistant acting as an inquisitive interviewer.  This assistant can be created using existing APIs or as a system prompt on any LLM.  Users can create a single interviewer bot or a network of bots, each specializing in a specific knowledge domain.
@@ -62,6 +64,7 @@ If the user requests a more liberal approach, include more details. For example:
 
 Output the contextual data snippets as a continuous markdown block within a code fence.
 
+![alt text](diagrams/2.png)
 
 ## 2: The Vector Store Pipeline (or Manual Approach)
 
@@ -79,6 +82,14 @@ In multi-agent frameworks, the initial context data can be considered a "slush p
 
 This architecture prioritizes personal data sovereignty.  Users proactively generate and control their contextual data, decoupling it from any single AI company. The user can refuse to answer questions, preventing the capture of specific data.
 
+## "Passive" Vs. "Proactive" Context Data Generation
+
+![alt text](diagrams/3.png)
+
+## How Multiple Contextual Data Sources Could Coexist In Integrated RAG Pipelines
+
+![alt text](diagrams/3.png)
+
 ## Potential Use Cases
 
 This system could kickstart RAG pipelines for personal and enterprise users.  Speech-to-text interfaces could make interviews more enjoyable. Transcripts from audio interviews could be fed into the vector database.
@@ -87,6 +98,7 @@ In a business context, this method could create a focused initial context data s
 
 These systems can coexist. Data can flow into the context store from multiple sources. With read-write vector databases, different context sources could even correct or update each other. Chat history, deliberately created context data, and information from internal tools could be combined into a comprehensive context repository connected to LLMs and other AI tools.
 
+---
 
 ## Author
 
