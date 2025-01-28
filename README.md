@@ -1,5 +1,7 @@
 # Personalized AI: A Model for a Proactive, Interview-Based Context Generation Architecture
 
+![alt text](graphics/banner.jpg)
+
 *By: Daniel Rosehill*
 
 *Date: 2025-01-28*
